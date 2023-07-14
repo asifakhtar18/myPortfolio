@@ -1,0 +1,115 @@
+
+.skills-container{
+    text-align: center;
+    margin: 0;  
+}
+
+
+
+
+
+.skill-header{
+    padding: 20px 0 0 0;
+    margin-top: 100px ;
+    font-size: 50px;
+    color: lightgray;
+}
+
+.skill-img{
+    width: 100px;
+    height: 100px;
+}
+
+.skill-cube{
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cube{
+  margin: 60px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg);
+    animation: rotate 6s infinite linear;
+  }
+  
+  .face {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    
+  }
+  
+  .front {
+    transform: translateZ(50px);
+  }
+  
+  .back {
+    transform: translateZ(-50px) rotateY(180deg);
+  }
+  
+  .right {
+    transform: rotateY(90deg) translateZ(50px);
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translateZ(50px);
+  }
+  
+  .top {
+    transform: rotateX(-90deg) translateZ(50px);
+  }
+  
+  .bottom {
+    transform: rotateX(90deg) translateZ(50px);
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+      transform: rotateX(360deg) rotateY(360deg);
+    }
+  }
+  
+
+  
+@media (max-width:1200px){
+  .skills-container{
+    margin: 20px 0 0 0 ; 
+    
+}
+
+
+
+.cube{
+    text-align: center;
+    margin: 10px; 
+    width: 60px;  
+    height: 60px;
+}
+.skill-img{
+  width: 60px;
+  height: 60px;
+}
+.face {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+}
+
+
+  @keyframes rotate {
+    0% {
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+    
+  }
+  
+}

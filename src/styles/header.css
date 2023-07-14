@@ -1,0 +1,59 @@
+
+.header{
+    padding-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pages{
+    display: flex;
+    margin-top: 10px;
+    margin-right: 100px;
+    
+}
+
+.socials{
+   margin: 20px;
+    
+}
+
+
+.social-icons{
+    margin: 10px;
+    font-size: 30px;
+    color: lightgray ;
+    
+
+}
+
+
+h1{
+    color: lightgray ;
+    margin-top: 10px;
+    margin-left: 20px ;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 60px;
+}
+
+.hero-title h3{
+    margin-top:15px ;
+    margin-left:25px;
+    color: beige;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+
+@media (max-width : 920px) {
+
+    .socials{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-icons{
+        margin: 10px ;
+    }
+    
+}
